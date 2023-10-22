@@ -4,7 +4,7 @@ import logoWhite from "@img/logoWhite.png"
 import facebook from "@img/facebook.png"
 import instagram from "@img/instagram.png"
 import email from "@img/email.png"
-import worldwide from "@img/worldwide.png"
+import worldwide from "@img/worldWide.png"
 import footerLabel from "@img/footerLabel.png"
 
 
