@@ -19,8 +19,8 @@ const config: Config = {
 		'healthyMe' : 'url(./img/healthyMe.png)',
 		'greenBg' : 'url(./img/greenBg.jpg)',
 		'green-bottom' : 'url(./img/bottomGreenShape.png)',
-		'green-top' : 'url(./img/UpperGreenShape.png)',
-		'white-top' : 'url(./img/UpperWhiteShape.png)',
+		'green-top' : 'url(./img/upperGreenShape.png)',
+		'white-top' : 'url(./img/upperWhiteShape.png)',
       },
 	  height: {
 		  'first-landing-section': "calc(100vh - 240px)",
