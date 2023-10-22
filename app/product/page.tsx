@@ -4,19 +4,22 @@ import products from '@info/products';
 import Image, { StaticImageData } from 'next/image';
 
 export default function Product() {
-	const valores = window.location.search;
-	const urlParams = useMemo(() => new URLSearchParams(valores), [valores]);
+	function getParams() {
+		const valores = window.location.search;
+		const urlParams = new URLSearchParams(valores);
+		return urlParams.get('id');
+	}
 	const [product, setProduct] = useState(products[0]);
 	const [selectedImage, setSelectedImage] = useState(product?.img[0]);
 	const [compareHeight, setCompareHeight] = useState(false);
 	const [showMore, setShowMore] = useState(true);
 	const [loaded, setLoaded] = useState(false);
 	useEffect(() => {
-		setProduct(products.filter((product : any) => urlParams.get('id') === product.productCode)[0]);
+		setProduct(products.filter((product : any) => getParams === product.productCode)[0]);
 		if(!loaded)
 		setSelectedImage(product?.img[0]);
 		document.querySelector('#description_container')?.clientHeight! < document.querySelector('#description')?.clientHeight! ? setCompareHeight(true) : setCompareHeight(false);
-	} ,[product, urlParams, selectedImage, loaded])
+	} ,[product, selectedImage, loaded])
 	if (!product) return <div></div>
 	return (
 		<main id='main_content' className="flex justify-center w-[1700px] max-w-full relative left-[50%] translate-x-[-50%]">
