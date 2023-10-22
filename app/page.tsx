@@ -54,7 +54,7 @@ export default function Page() {
 					<span className='font-bold text-3xl text-green-600'>X</span>
 				</div>
 			</div>
-			<section className='w-full max-w-full flex flex-col items-center'>
+			{/* <section className='w-full max-w-full flex flex-col items-center'>
 				<h1 className=' font-bebasNeue md:text-6xl text-5xl mb-12 mt-10'>maca royale</h1>
 				<div className='w-full bg-greenBg md:h-[704px] h-auto relative flex item-center justify-around 
 					before:bg-green-bottom before:contents-[""] before:absolute before:w-full before:bg-cover before:-bottom-11 before:h-12 before:bg-repeat-x 
@@ -105,7 +105,7 @@ export default function Page() {
 							/>
 						</div>
 				</div>
-			</section>
+			</section> */}
 		</div>
 	</main>
   )

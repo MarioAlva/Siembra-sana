@@ -9,22 +9,22 @@ import { useState } from 'react';
 
 export default function Catalogue() {
 	const [filteredProducts, setFilteredProducts] = useState(products);
-	const [isFiltered, setIsFiltered] = useState(false);
-	const filterProducts = (filter : string) => {
-		setFilteredProducts(products.filter((product : any) => product.genre.filter((genre : string) => genre === filter).length > 0));
-	}
+	// const [isFiltered, setIsFiltered] = useState(false);
+	// const filterProducts = (filter : string) => {
+	// 	setFilteredProducts(products.filter((product : any) => product.genre.filter((genre : string) => genre === filter).length > 0));
+	// }
 	return (
 		<div>
-			<div className="w-full h-full left-0 bg-slate-100 flex justify-center flex-wrap z-10">
+			{/* <div className="w-full h-full left-0 bg-slate-100 flex justify-center flex-wrap z-10">
 				{category.map((category : string, index : number) => (
 					<div key={index} className="h-full flex justify-center items-center hover:bg-white cursor-pointer" onClick={() => {filterProducts(category); setIsFiltered(true)}}>
 						<span className="text-xs flex my-1 px-10 w-full border border-l-green-600 border-r-green-600 border-transparent uppercase">{category}</span>
 					</div>
 				))}
-			</div>
+			</div> */}
 			<main id='main_content' className="flex justify-center w-[1700px] max-w-full relative left-[50%] translate-x-[-50%] pb-12">
 				<div className='w-[1700px] max-w-full relative'>
-					{!isFiltered &&
+					{/* {!isFiltered &&
 						<section className='md:px-12 lg:px-5 bg-plant-image bg-cover flex h-[400px] lg:h-[700px] lg:max-h-first-section lg:py-3 relative before:contents-[""] before:absolute before:w-full before:h-full before:bg-black-white-gradient before:top-0 before:left-0'>
 							<div className='hidden lg:flex flex-col justify-between items-center z-10'>
 								<div className='w-[300px] h-[300px] bg-green-600'></div>
@@ -36,7 +36,7 @@ export default function Catalogue() {
 								<div className='w-[300px] h-[300px] bg-green-600'></div>
 							</div>
 						</section>
-					}
+					} */}
 					<section className='w-full flex justify-center'>
 						<div className='hidden w-[300px] bg-slate-200 border-r border-neutral-300'></div>
 						<div className='w-full'>

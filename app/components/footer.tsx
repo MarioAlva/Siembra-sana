@@ -84,12 +84,6 @@ export default function Footer(){
 				<div className="px-5 absolute bottom-0 w-full h-32 bg-black flex justify-center items-center z-10 border-t border-neutral-800">
 					<div className="w-[1400px] max-w-full flex justify-around items-center flex-col-reverse md:flex-row">
 						<p className="text-neutral-300 md:text-sm text-xs my-3">© 2023 Siembra Sana. Todos los derechos reservados.</p>
-						<Image 
-							src={footerLabel}
-							alt="footer label"
-							fill={false}
-							className='md:h-16 h-12 w-auto'
-						/>
 					</div>
 				</div>
 		</footer>
