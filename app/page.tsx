@@ -35,13 +35,12 @@ export default function Page() {
 							src={homeImg}
 							alt="home image"
 							fill={false}
-							className='absolute top-0 md:h-[559px] h-[40vh] w-auto'
+							className='absolute top-0 md:h-[409px] md:mt-16 h-[30vh] mt-10 w-auto'
 						/>
 						<div className='w-full flex justify-center h-24 items-center my-12 md:hidden absolute bottom-2'>
 							<div className='h-full flex justify-center relative 
 											before:contents-[""] before:bg-contain before:-top-[60px] before:h-24 before:w-60 before:absolute before:bg-logo 
 											after:contents-[""] after:bg-contain after:-bottom-[30px] after:h-24 after:w-[200px] after:absolute after:bg-healthyMe'>
-								<span className='font-bold text-xl text-green-700'>X</span>
 							</div>
 						</div>
 					</div>
@@ -51,61 +50,8 @@ export default function Page() {
 				<div className='h-full flex items-center relative 
 								before:contents-[""] before:bg-contain before:top-0 before:h-24 before:w-60 before:absolute before:bg-logo before:-left-64 
 								after:contents-[""] after:bg-contain after:top-0 after:h-24 after:w-[200px] after:absolute after:bg-healthyMe after:-right-[220px]'>
-					<span className='font-bold text-3xl text-green-600'>X</span>
 				</div>
 			</div>
-			{/* <section className='w-full max-w-full flex flex-col items-center'>
-				<h1 className=' font-bebasNeue md:text-6xl text-5xl mb-12 mt-10'>maca royale</h1>
-				<div className='w-full bg-greenBg md:h-[704px] h-auto relative flex item-center justify-around 
-					before:bg-green-bottom before:contents-[""] before:absolute before:w-full before:bg-cover before:-bottom-11 before:h-12 before:bg-repeat-x 
-					after:bg-green-top after:contents-[""] after:absolute after:w-full after:bg-cover after:-top-11 after:h-12 after:bg-repeat-x'>
-						<div className='flex justify-around md:w-[700px] w-full flex-wrap my-12 px-7 md:px-0 [&>div]:my-4'>
-							<div className='flex flex-col md:w-64 w-full z-10'>
-								<Image 
-									src={baby}
-									alt="home image"
-									height={50}
-								/>
-								<h5 className='mt-4 font-bold uppercase text-white text-xl'>MEJORA EN LA FERTILIDAD Y LA LIBIDO</h5>
-								<p className='text-white text-justify mt-2'>La maca se ha utilizado tradicionalmente para mejorar la fertilidad y la libido en ambos sexos.</p>
-							</div>
-							<div className='flex flex-col md:w-64 w-full z-10'>
-								<Image 
-									src={brain}
-									alt="home image"
-									height={50}
-								/>
-								<h5 className='mt-4 font-bold uppercase text-white text-xl'>MEJORA EN LA FUNCIÓN COGNITIVA</h5>
-								<p className='text-white text-justify mt-2'>Algunos estudios han sugerido que la maca puede mejorar la memoria y la capacidad de aprendizaje en personas mayores.</p>
-							</div>
-							<div className='flex flex-col md:w-64 w-full z-10'>
-								<Image 
-									src={science}
-									alt="home image"
-									height={50}
-								/>
-								<h5 className='mt-4 font-bold uppercase text-white text-xl'>EFECTOS SOBRE EL SISTEMA ENDOCRINO</h5>
-								<p className='text-white text-justify mt-2'>La maca se ha encontrado que puede ayudar a equilibrar los niveles hormonales, especialmente en las mujeres durante la menopausia y la menstruación.</p>
-							</div>
-							<div className='flex flex-col md:w-64 w-full z-10'>
-								<Image 
-									src={health}
-									alt="home image"
-									height={50}
-								/>
-								<h5 className='mt-4 font-bold uppercase text-white text-xl'>PROPIEDADES ANTIINFLAMATORIAS Y ANTIOXIDANTES</h5>
-								<p className='text-white text-justify mt-2'>La maca contiene antioxidantes y compuestos antiinflamatorios, lo que podría ayudar a proteger el cuerpo contra el daño celular y mejorar la salud en general.</p>
-							</div>
-						</div>
-						<div className='flex items-center justify-center w-full h-full md:w-auto lg:relative absolute'>
-							<Image 
-								src={homeMaca}
-								alt="home image"
-								className=' opacity-40 lg:opacity-100'
-							/>
-						</div>
-				</div>
-			</section> */}
 		</div>
 	</main>
   )

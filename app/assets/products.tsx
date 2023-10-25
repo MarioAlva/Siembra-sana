@@ -13,6 +13,7 @@ import chocolateBar80Label from '@img/products/chocolateBar80/Label.png'
 import chocolateBar70Item from '@img/products/chocolateBar70/Item.png'
 import chocolateBar70Label from '@img/products/chocolateBar70/Label.png'
 import chocolateBarMiniItem from '@img/products/chocolateBarMini70/Item.png'
+import chocolateBar70Item2 from '@img/products/chocolateBarMini70/Item2.png'
 import chocolateBarMiniLabel from '@img/products/chocolateBarMini70/Label.png'
 import cacaoPowderItem from '@img/products/cacaoPowderSachet/Item.png'
 import cacaoPowderBack from '@img/products/cacaoPowderSachet/Back.png'
@@ -36,7 +37,7 @@ import noniPulpBack from '@img/products/noniPulp/Back.png'
 
 const products = [
 	{
-		name: "MACA ROYAL FOR WOMEN CAPSULES",
+		name: "CAPSULAS DE MACA ROYALE PARA MUJER",
 		price: 12.54,
 		weight: 85,
 		packing: "90 FRASCOS POR CAJA",
@@ -46,7 +47,7 @@ const products = [
 		genre: ["maca", "capsule"]
 	},
 	{
-		name: "MACA ROYAL FOR MEN CAPSULES",
+		name: "CAPSULAS DE MACA ROYALE PARA HOMBRE",
 		price: 12.54,
 		weight: 85,
 		packing: "90 FRASCOS POR CAJA",
@@ -56,7 +57,7 @@ const products = [
 		genre: ["maca", "capsule"]
 	},
 	{
-		name: "MACA ROYAL FOR MEN SACHETS",
+		name: "MACA ROYALE PARA HOMBRE SACHETS",
 		price: 10.45,
 		weight: 250,
 		packing: "42 SACHETS  POR CAJA",
@@ -66,7 +67,7 @@ const products = [
 		genre: ["maca", "sachet"]
 	},
 	{
-		name: "MACA ROYAL FOR WOMEN SACHETS",
+		name: "MACA ROYALE PARA MUJER SACHETS",
 		price: 10.45,
 		weight: 250,
 		packing: "42 SACHETS  POR CAJA",
@@ -76,7 +77,7 @@ const products = [
 		genre: ["maca", "sachet"]
 	},
 	{
-		name: "CHOCOLATE BAR, DARK 80%",
+		name: "BARRA DE CHOCOLATE NEGRO 80%",
 		price: 4.35,
 		weight: 100,
 		packing: "150 TABLETAS POR CAJA",
@@ -86,7 +87,7 @@ const products = [
 		genre: ["chocolates"]
 	},
 	{
-		name: "CHOCOLATE BAR, DARK 70%",
+		name: "BARRA DE CHOCOLATE NEGRO 70%",
 		price: 4.35,
 		weight: 100,
 		packing: "150 TABLETAS POR CAJA",
@@ -96,17 +97,17 @@ const products = [
 		genre: ["chocolates"]
 	},
 	{
-		name: "CHOCOLATE BAR MINI, DARK 70%",
+		name: "MINI BARRA DE CHOCOLATE NEGRO 70%",
 		price: 0.76,
 		weight: 9,
 		packing: "1200 MINI TABLETAS POR CAJA",
 		productCode: "MC076",
 		description: "Nuestro chocolate 70% Dark HEALTHY ME es único porque…\n1ro nuestro chocolate es uno de los más puro del mundo pues solo tiene dos ingredientes que son cacao y panela (esto lo hemos comprobado inclusive cuando hemos estado en la Biofach, que es la feria orgánica más representativa del mundo, en Nüremberg y no hubo ningún otro chocolate con solo dos ingredientes),\n2do nuestro chocolate es orgánico, que quiere decir que no usamos ningún tipo de químico,\n3ro no usamos ningún tipo de preservante,\n4to no usamos lecitina de soya (por eso se demora un poquito en derretirse en tu boca, pero una vez que se derrite vas a sentir como invade el sabor auténtico del cacao tu cavidad bucal),\n5to no usamos azúcar,\n6to no usamos ningún tipo de grasa sucedánea (grasas vegetales que las usan para bajar el contenido de cacao y reducen costos)\nLa sensación después de comer es realmente limpia debido a que nuestro producto no tiene ningún tipo de grasa química.\nLa opción de 9gr es perfecta para tener el producto al lado de la caja para que el cliente pueda llevarse un bombón pequeño mientras espera a pagar.",
-		img: [chocolateBarMiniItem, chocolateBarMiniLabel],
+		img: [chocolateBarMiniItem, chocolateBar70Item2, chocolateBarMiniLabel],
 		genre: ["chocolates"]
 	},
 	{
-		name: "CACAO POWDER SACHET",
+		name: "CACAO SACHET EN POLVO",
 		price: 6.85,
 		weight: 250,
 		packing : "36 SACHETS POR CAJA",
@@ -116,7 +117,7 @@ const products = [
 		genre: ["cacao", "sachet"]
 	},
 	{
-		name: "CACAO NIBS SACHET",
+		name: "NIBS DE CACAO SACHET",
 		price: 6.32,
 		weight: 250,
 		packing : "36 SACHETS POR CAJA",
@@ -126,7 +127,7 @@ const products = [
 		genre: ["cacao", "sachet"]
 	},
 	{
-		name: "AGUAYMANTO DESHIDRATADO CUBIERTO CON CHOCOLATE",
+		name: "AGUA Y MANTO DESHIDRATADO CUBIERTO CON CHOCOLATE",
 		price: 3.96,
 		weight: 65,
 		packing: "125 SACHETS POR CAJA",
@@ -136,7 +137,7 @@ const products = [
 		genre: ["aguaymanto", "chocolates"]
 	},
 	{
-		name: "CAMU CAMU POLVO ATOMIZADO",
+		name: "POLVO DE CAMU CAMU ATOMIZADO",
 		price: 14.19,
 		weight: 100,
 		packing: "56 FRASCOS POR CAJA",
@@ -146,7 +147,7 @@ const products = [
 		genre: ["camu camu"]
 	},
 	{
-		name: "CAMU CAMU VEGETARIAN CAPSULES",
+		name: "CAPSULAS VEGETARIANAS DE CAMU CAMU",
 		price: 14.21,
 		weight: 85,
 		packing: "90 FRASCOS POR CAJA",
@@ -156,7 +157,7 @@ const products = [
 		genre: ["camu camu", "capsule"]
 	},
 	{
-		name: "CAMU CAMU VINAGER",
+		name: "VINAGRE DE CAMU CAMU",
 		price: 6.15,
 		weight: 720,
 		packing: "25 BOTELLAS POR CAJA",
@@ -166,7 +167,7 @@ const products = [
 		genre: ["camu camu", "vinagres"]
 	},
 	{
-		name: "YACON SYRUP",
+		name: "JARABE DE YACON",
 		price: 12.62,
 		weight: 410,
 		packing: "48 FRASCOS POR CAJA",
@@ -176,7 +177,7 @@ const products = [
 		genre: ["yacon"]
 	},
 	{
-		name: "NONI PULP",
+		name: "PULPA DE NONI",
 		price: 15.03,
 		weight: 953,
 		packing: "16 BOTELLAS POR CAJA",

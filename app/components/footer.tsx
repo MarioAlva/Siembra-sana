@@ -5,12 +5,10 @@ import facebook from "@img/facebook.png"
 import instagram from "@img/instagram.png"
 import email from "@img/email.png"
 import worldwide from "@img/worldWide.png"
-import footerLabel from "@img/footerLabel.png"
-
 
 export default function Footer(){
 	return (
-		<footer className='bg-plant-image w-full bg-cover md:h-[600px] h-auto bg-no-repeat relative flex justify-center pt-24 pb-12 mt-24  
+		<footer className='bg-plant-image w-full bg-cover md:h-[470px] h-auto bg-no-repeat relative flex justify-center pt-24 pb-12 mt-24  
 			before:contents-[""] before:w-full before:h-full before:absolute before:bg-black/80 before:z-[1] before:top-0 before:left-0'>
 				<div className=" bg-white-top w-full absolute top-0 left-0 h-11 z-10"></div>
 				<div className="w-[1400px] max-w-full px-5 flex md:flex-row flex-col [&>div]:flex [&>div]:flex-col z-10 justify-between">
@@ -21,7 +19,7 @@ export default function Footer(){
 							fill={false}
 							className='w-52'
 						/>
-						<p className= "text-neutral-400 font-semibold text-sm leading-6 my-3 text-center md:text-left">Elige una vida saludable con nuestra tienda en línea, donde encontrarás alimentos orgánicos y naturales, suplementos y productos ecológicos. Apoya a tu cuerpo y al medio ambiente con cada compra.</p>
+						<p className= "text-neutral-400 font-semibold text-sm leading-6 my-3 text-center md:text-left">Elige una vida saludable con Siembra sana, aqui encontrarás el catálogo de alimentos orgánicos y naturales, suplementos y productos ecológicos. Envia un email solicitando el producto que quieras</p>
 						<div className="flex [&>a]:mx-3">
 							<Link href="https://www.facebook.com/SiembraSana.es/" target="_BLANK" className="w-10 h-10 flex justify-center items-center rounded-full bg-neutral-800 hover:bg-green-600 transition-colors">
 								<Image 
@@ -81,7 +79,7 @@ export default function Footer(){
 						<p className="text-sm text-neutral-300 mt-2 mb-28 md:mb-0">Barcelona, España</p>
 					</div>
 				</div>
-				<div className="px-5 absolute bottom-0 w-full h-32 bg-black flex justify-center items-center z-10 border-t border-neutral-800">
+				<div className="px-5 absolute bottom-0 w-full h-16 bg-black flex justify-center items-center z-10 border-t border-neutral-800">
 					<div className="w-[1400px] max-w-full flex justify-around items-center flex-col-reverse md:flex-row">
 						<p className="text-neutral-300 md:text-sm text-xs my-3">© 2023 Siembra Sana. Todos los derechos reservados.</p>
 					</div>

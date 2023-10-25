@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "mailto": "^0.1.2",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
@@ -27,7 +28,7 @@
     "typescript": "^5"
   },
   "cacheDirectories": [
-	"node_modules/",
-	".next/cache/"
+    "node_modules/",
+    ".next/cache/"
   ]
 }
