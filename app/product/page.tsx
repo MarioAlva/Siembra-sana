@@ -24,19 +24,20 @@ export default function Product() {
 	if (!product) return <div></div>
 	return (
 		<main id='main_content' className="flex justify-center w-[1700px] max-w-full relative left-[50%] translate-x-[-50%]">
-			<div className="w-[1500px] max-w-full flex flex-col items-center px-12 mb-12">
-				<section className="flex w-full [&>div]:flex [&>div]:flex-col [&>div]:w-1/2 justify-around mt-12">
-					<div className="flex w-[30vw] max-w-[400px] flex-col">
-						<div className='w-full h-[30vw] max-h-[400px]'>
+			<div className="w-[1500px] max-w-full flex flex-col items-center md:px-12 md:mb-12 mb-0 px-4 pb-4">
+				<h1 className='flex sm:hidden text-2xl font-bold -mb-10'>{product.name}</h1>
+				<section className="flex w-full [&>div]:flex [&>div]:flex-col [&>div]:w-1/2 justify-around mt-12 h-auto">
+					<div className="flex w-[30vw] max-w-[400px] flex-col mr-2">
+						<div className='w-full md:h-[30vw] lg:h-[400px] h-[300px] border-2 border-green-600 mb-4 bg-neutral-200'>
 							<Image 
 							className='h-full w-full object-contain'
 								src={selectedImage}
 								alt="product"
 							/>
 						</div>
-						<div className='flex w-full h-40'>
+						<div className='flex w-full h-auto first:[&>div]:mx-0'>
 							{product.name && product.img.map((img : StaticImageData, index : number) => (
-								<div key={index} className='w-1/4 p-2 md:h-24 h-16 cursor-pointer' onClick={() => {setSelectedImage(img); setLoaded(true)}}>
+								<div key={index} className='mx-[2px] sm:mx-2 md:mx-4 p-2 md:h-24 sm:h-16 h-12 md:w-24 sm:w-16 w-12 cursor-pointer border border-green-600 mb-4 bg-neutral-200' onClick={() => {setSelectedImage(img); setLoaded(true)}}>
 									<Image 
 										className='h-full w-full object-contain'
 										src={img}
@@ -48,12 +49,12 @@ export default function Product() {
 					</div>
 					<div className='justify-between'>
 						<div>
-							<h1 className='md:text-5xl text-xl font-bold'>{product.name}</h1>
-							<div className='flex items-center md:text-xl text-xs md:mt-2 md-1'>
+							<h1 className='hidden sm:flex md:text-5xl sm:text-3xl font-bold'>{product.name}</h1>
+							<div className='flex items-center md:text-xl sm:text-xs text-[10px] md:mt-2 md-1'>
 								<span className='text-neutral-500'>Peso unidad: </span>
 								<span className='text-neutral-700'>&nbsp;{product.weight}g</span>
 							</div>
-							<div className='flex items-center md:text-xl text-xs'>
+							<div className='flex items-center md:text-xl sm:text-xs text-[10px]'>
 								<span className='text-neutral-700'>{product.packing}</span>
 							</div>
 						</div>
@@ -71,13 +72,13 @@ export default function Product() {
 								))}</span>
 							</div>
 							<div className='flex items-center md:text-base text-[10px]'>
-								<span className='text-neutral-500'>Código de producto: </span>
+								<span className='text-neutral-500'>Código producto: </span>
 								<span className='text-neutral-700'>&nbsp;{product.productCode}</span>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section className='flex w-full flex-col items-center md:mt-12 mt-1 '>
+				<section className='flex w-full flex-col items-center md:mt-12 mt-5 '>
 					<h1 className='font-bold md:text-2xl text-base md:mb-3 mb-1'>Descripción</h1>
 					<div id="description_container" className={(showMore && 'overflow-hidden md:max-h-[400px] max-h-[250px]') + ' md:pt-10 pt-3 md:px-5 px-2 relative border-t border-neutral-400'}>
 						<div id='description'>

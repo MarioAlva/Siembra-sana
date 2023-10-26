@@ -6,7 +6,7 @@ const faqs = [
 	//Give me a list of 10 possible questions
 	{
 		question: "¿Qué son los superfoods?",
-		answer: "Los superfoods son alimentos que poseen una alta densidad nutricional, es decir, son ricos en vitaminas, minerales, proteínas, antioxidantes, fitoquímicos, enzimas y aminoácidos esenciales. Estos alimentos tienen una historia milenaria, ya que fueron cultivados y consumidos por las civilizaciones antiguas, como los incas.",
+		answer: "Los superfoods son alimentos orgánicos y silvestres que poseen una alta densidad nutricional, es decir, son ricos en vitaminas, minerales, proteínas, antioxidantes, fitoquímicos, enzimas y/o aminoácidos esenciales. Estos alimentos tienen una historia milenaria, ya que fueron cultivados y consumidos por las civilizaciones antiguas, como los incas.",
 	},
 	{
 		question: "¿Son orgánicos?",

@@ -8,7 +8,7 @@ import worldwide from "@img/worldWide.png"
 
 export default function Footer(){
 	return (
-		<footer className='bg-plant-image w-full bg-cover md:h-[470px] h-auto bg-no-repeat relative flex justify-center pt-24 pb-12 mt-24  
+		<footer className='bg-plant-image w-full bg-cover md:h-[470px] h-auto bg-no-repeat relative flex justify-center pt-24 pb-12 md:mt-24 mt-3  
 			before:contents-[""] before:w-full before:h-full before:absolute before:bg-black/80 before:z-[1] before:top-0 before:left-0'>
 				<div className=" bg-white-top w-full absolute top-0 left-0 h-11 z-10"></div>
 				<div className="w-[1400px] max-w-full px-5 flex md:flex-row flex-col [&>div]:flex [&>div]:flex-col z-10 justify-between">
@@ -58,13 +58,15 @@ export default function Footer(){
 						<h3 className="text-white font-bold uppercase md:h-20 h-8 mt-10 md:mt-0 flex items-center">CONTACTOS</h3>
 						<ul className="[&>li]:my-4">
 							<li className="text-white text-sm transition-colors  text-center md:text-left">
-								<Image 
-									src={email}
-									alt="email"
-									fill={false}
-									className='w-5 inline-block mr-2'
-								/>
-								<span>comercial@siembrasana.bio</span>
+								<a href="mailto:comercial@siembrasana.bio">
+									<Image 
+										src={email}
+										alt="email"
+										fill={false}
+										className='w-5 inline-block mr-2'
+									/>
+									<span>comercial@siembrasana.bio</span>
+								</a>
 							</li>
 							<li className="text-white text-sm transition-colors">
 								<Image 
