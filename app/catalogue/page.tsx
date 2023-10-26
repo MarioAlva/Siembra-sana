@@ -73,7 +73,7 @@ export default function Catalogue() {
 													alt="product"
 												/>
 											</div>
-											<h3 className='md:text-xl text-lg font-bold text-center leading-5 p-3 my-auto transition-colors'>{product.name}</h3>
+											<h3 className='md:text-xl text-base font-bold text-center md:leading-5 leading-4 p-3 my-auto transition-colors'>{product.name}</h3>
 										</Link>
 									))}
 								</div>

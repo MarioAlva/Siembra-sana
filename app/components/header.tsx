@@ -8,7 +8,7 @@ export default function Header() {
 	const [showMenu, setShowMenu] = useState(false)
 	return (
 		<header className="w-screen h-24 flex justify-center z-50">
-			<div className='w-[1700px] max-w-full md:px-12 px-5 flex justify-between items-center h-full z-[101]'>
+			<div className='md:w-[1700px] w-full max-w-full md:px-12 px-5 flex justify-between items-center h-full z-[101]'>
 				<Link href="/">
 					<Image 
 						src={logo}

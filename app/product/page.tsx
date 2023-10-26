@@ -7,10 +7,13 @@ export default function Product() {
 	const setInitialProduct = () => {
 		const valores = window.location.search;
 		const urlParams = new URLSearchParams(valores);
+		const index = products.findIndex((product : any) => urlParams.get('id') === product.productCode);
+		setIndex(index);
 		const product = products.filter((product : any) => urlParams.get('id') === product.productCode)[0];
 		setProduct(product);
 	}
-	const [product, setProduct] = useState(products[0]);
+	const [index, setIndex] = useState(0);
+	const [product, setProduct] = useState(products[index]);
 	const [selectedImage, setSelectedImage] = useState(product?.img[0]);
 	const [compareHeight, setCompareHeight] = useState(false);
 	const [showMore, setShowMore] = useState(true);
