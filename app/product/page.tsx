@@ -31,7 +31,8 @@ export default function Product() {
 		resizeListener();
 		document.querySelector('#description_container')?.clientHeight! < (document.querySelector('#description')?.clientHeight! + 10) ? setCompareHeight(true) : setCompareHeight(false);
 	} ,[product, selectedImage, loaded])
-	if (!product) return <div></div>
+	if (!product) return <main id='main_content' className="flex justify-center w-[1700px] max-w-full relative left-[50%] translate-x-[-50%]">
+	<div className="w-[1500px] max-w-full flex flex-col items-center md:px-12 md:mb-12 mb-0 px-4 pb-4 h-[1000px]"></div></main>;
 	return (
 		<main id='main_content' className="flex justify-center w-[1700px] max-w-full relative left-[50%] translate-x-[-50%]">
 			<div className="w-[1500px] max-w-full flex flex-col items-center md:px-12 md:mb-12 mb-0 px-4 pb-4">
