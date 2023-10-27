@@ -21,14 +21,17 @@ export default function Product() {
 	const [compareHeight, setCompareHeight] = useState(false);
 	const [showMore, setShowMore] = useState(true);
 	const [loaded, setLoaded] = useState(false);
+	const resizeListener = () => {
+		addEventListener("resize", (event) => {
+			document.querySelector('#description_container')?.clientHeight! < (document.querySelector('#description')?.clientHeight! + 10) ? setCompareHeight(true) : setCompareHeight(false);
+		});
+	}
 	useEffect(() => {
 		if(!loaded)
 		setSelectedImage(product?.img[0]);
+		resizeListener();
 		document.querySelector('#description_container')?.clientHeight! < (document.querySelector('#description')?.clientHeight! + 10) ? setCompareHeight(true) : setCompareHeight(false);
 	} ,[product, selectedImage, loaded])
-	addEventListener("resize", (event) => {
-		document.querySelector('#description_container')?.clientHeight! < (document.querySelector('#description')?.clientHeight! + 10) ? setCompareHeight(true) : setCompareHeight(false);
-	});
 	if (!product) return <div></div>
 	return (
 		<main id='main_content' className="flex justify-center w-[1700px] max-w-full relative left-[50%] translate-x-[-50%]">
