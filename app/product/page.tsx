@@ -2,21 +2,19 @@
 import { useState, useEffect } from 'react';
 import products from '@info/products';
 import Image, { StaticImageData } from 'next/image';
-import productModel from '@models/product';
 
 export default function Product() {
-	const getProduct = () =>{
-		if (typeof localStorage !== 'undefined') {
-			return localStorage.getItem("productCode");
-		} else if (typeof sessionStorage !== 'undefined') {
-			// Fallback to sessionStorage if localStorage is not supported
-			return sessionStorage.getItem("productCode");
+	const setInitialProduct = () => {
+		var valores = "";
+		if (typeof window === "undefined") {
+			console.log("Oops, `window` is not defined")
 		} else {
-			// If neither localStorage nor sessionStorage is supported
-			console.log('Web Storage is not supported in this environment.');
+			valores = window.location.search;
 		}
+		const urlParams = new URLSearchParams(valores);
+		return urlParams.get('id');
 	}
-	const [product, setProduct] = useState(products.filter((product : any) => getProduct() === product.productCode)[0]);
+	const [product, setProduct] = useState(products.filter((product : any) => setInitialProduct() === product.productCode)[0]);
 	const [selectedImage, setSelectedImage] = useState(product?.img[0]);
 	const [compareHeight, setCompareHeight] = useState(false);
 	const [showMore, setShowMore] = useState(true);
@@ -27,6 +25,7 @@ export default function Product() {
 		});
 	}
 	useEffect(() => {
+		setProduct(products.filter((product : any) => setInitialProduct() === product.productCode)[0]);
 		if(!loaded)
 		setSelectedImage(product?.img[0]);
 		resizeListener();
