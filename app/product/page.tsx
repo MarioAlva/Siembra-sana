@@ -5,7 +5,18 @@ import Image, { StaticImageData } from 'next/image';
 import productModel from '@models/product';
 
 export default function Product() {
-	const [product, setProduct] = useState(products.filter((product : any) => localStorage.getItem("productCode") === product.productCode)[0]);
+	const getProduct = () =>{
+		if (typeof localStorage !== 'undefined') {
+			return localStorage.getItem("productCode");
+		} else if (typeof sessionStorage !== 'undefined') {
+			// Fallback to sessionStorage if localStorage is not supported
+			return sessionStorage.getItem("productCode");
+		} else {
+			// If neither localStorage nor sessionStorage is supported
+			console.log('Web Storage is not supported in this environment.');
+		}
+	}
+	const [product, setProduct] = useState(products.filter((product : any) => getProduct() === product.productCode)[0]);
 	const [selectedImage, setSelectedImage] = useState(product?.img[0]);
 	const [compareHeight, setCompareHeight] = useState(false);
 	const [showMore, setShowMore] = useState(true);
