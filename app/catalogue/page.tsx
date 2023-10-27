@@ -65,7 +65,7 @@ export default function Catalogue() {
 							<div className='mt-3 flex justify-center'>
 								<div className='flex flex-wrap justify-center'>
 									{filteredProducts.map((product : any, index : number) => (
-										<Link key={index} href={"/product?id=" + product.productCode} className='w-[165px] h-[250px] md:w-[300px] md:h-[400px] border-2 [&>h3]:hover:text-yellow-600 hover:border-green-600 border-green-600 flex flex-col items-center md:m-2 m-[2px] transition-all'>
+										<Link key={index} href={"/product"} onClick={() => localStorage.setItem("productCode", product.productCode)} className='w-[165px] h-[250px] md:w-[300px] md:h-[400px] border-2 [&>h3]:hover:text-yellow-600 hover:border-green-600 border-green-600 flex flex-col items-center md:m-2 m-[2px] transition-all'>
 											<div className='border-green-600 h-2/3 w-full flex justify-center p-2 transition-all'>
 												<Image
 													className='h-full w-auto max-w-full p-2 '

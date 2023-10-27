@@ -2,28 +2,22 @@
 import { useState, useEffect } from 'react';
 import products from '@info/products';
 import Image, { StaticImageData } from 'next/image';
+import productModel from '@models/product';
 
 export default function Product() {
-	const setInitialProduct = () => {
-		const valores = window.location.search;
-		const urlParams = new URLSearchParams(valores);
-		const index = products.findIndex((product : any) => urlParams.get('id') === product.productCode);
-		setIndex(index);
-		const product = products.filter((product : any) => urlParams.get('id') === product.productCode)[0];
-		setProduct(product);
-	}
-	const [index, setIndex] = useState(0);
-	const [product, setProduct] = useState(products[index]);
+	const [product, setProduct] = useState(products.filter((product : any) => localStorage.getItem("productCode") === product.productCode)[0]);
 	const [selectedImage, setSelectedImage] = useState(product?.img[0]);
 	const [compareHeight, setCompareHeight] = useState(false);
 	const [showMore, setShowMore] = useState(true);
 	const [loaded, setLoaded] = useState(false);
 	useEffect(() => {
-		setInitialProduct();
 		if(!loaded)
 		setSelectedImage(product?.img[0]);
-		document.querySelector('#description_container')?.clientHeight! < document.querySelector('#description')?.clientHeight! ? setCompareHeight(true) : setCompareHeight(false);
+		document.querySelector('#description_container')?.clientHeight! < (document.querySelector('#description')?.clientHeight! + 10) ? setCompareHeight(true) : setCompareHeight(false);
 	} ,[product, selectedImage, loaded])
+	addEventListener("resize", (event) => {
+		document.querySelector('#description_container')?.clientHeight! < (document.querySelector('#description')?.clientHeight! + 10) ? setCompareHeight(true) : setCompareHeight(false);
+	});
 	if (!product) return <div></div>
 	return (
 		<main id='main_content' className="flex justify-center w-[1700px] max-w-full relative left-[50%] translate-x-[-50%]">
@@ -83,7 +77,7 @@ export default function Product() {
 				</section>
 				<section className='flex w-full flex-col items-center md:mt-12 mt-5 '>
 					<h1 className='font-bold md:text-2xl text-base md:mb-3 mb-1'>Descripción</h1>
-					<div id="description_container" className={(showMore && 'overflow-hidden md:max-h-[400px] max-h-[250px]') + ' md:pt-10 pt-3 md:px-5 px-2 relative border-t border-neutral-400'}>
+					<div id="description_container" className={(showMore && 'overflow-hidden md:max-h-[410px] max-h-[250px]') + ' md:pt-10 pt-3 md:px-5 px-2 relative border-t border-neutral-400'}>
 						<div id='description'>
 							{product.description.split('\n').map((paragraph : string, index : number) => (
 								<p key={index} className='md:text-lg text-[10px] my-1'>{paragraph}</p>
