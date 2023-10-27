@@ -13,6 +13,17 @@ export default function Catalogue() {
 	// const filterProducts = (filter : string) => {
 	// 	setFilteredProducts(products.filter((product : any) => product.genre.filter((genre : string) => genre === filter).length > 0));
 	// }
+	const saveProduct = (productCode : string) => {
+		if (typeof localStorage !== 'undefined') {
+			localStorage.setItem("productCode", productCode);
+		} else if (typeof sessionStorage !== 'undefined') {
+			// Fallback to sessionStorage if localStorage is not supported
+			sessionStorage.setItem("productCode", productCode);
+		} else {
+			// If neither localStorage nor sessionStorage is supported
+			console.log('Web Storage is not supported in this environment.');
+		}
+	}
 	return (
 		<div>
 			{/* <div className="w-full h-full left-0 bg-slate-100 flex justify-center flex-wrap z-10">
@@ -65,7 +76,7 @@ export default function Catalogue() {
 							<div className='mt-3 flex justify-center'>
 								<div className='flex flex-wrap justify-center'>
 									{filteredProducts.map((product : any, index : number) => (
-										<Link key={index} href={"/product"} onClick={() => localStorage.setItem("productCode", product.productCode)} className='w-[165px] h-[250px] md:w-[300px] md:h-[400px] border-2 [&>h3]:hover:text-yellow-600 hover:border-green-600 border-green-600 flex flex-col items-center md:m-2 m-[2px] transition-all'>
+										<Link key={index} href={"/product"} onClick={() => saveProduct(product.productCode)} className='w-[165px] h-[250px] md:w-[300px] md:h-[400px] border-2 [&>h3]:hover:text-yellow-600 hover:border-green-600 border-green-600 flex flex-col items-center md:m-2 m-[2px] transition-all'>
 											<div className='border-green-600 h-2/3 w-full flex justify-center p-2 transition-all'>
 												<Image
 													className='h-full w-auto max-w-full p-2 '
