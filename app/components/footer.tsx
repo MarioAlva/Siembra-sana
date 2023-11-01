@@ -51,7 +51,7 @@ export default function Footer(){
 						<ul className="[&>li]:my-4">
 							<li className="text-white text-sm hover:text-green-600 transition-colors text-center md:text-left"><Link href="/catalogue">Catálogo</Link></li>
 							<li className="text-white text-sm hover:text-green-600 transition-colors text-center md:text-left"><Link href="/about">FAQs</Link></li>
-							<li className="text-white text-sm hover:text-green-600 transition-colors text-center md:text-left"><Link href="/about">Contacto</Link></li>
+							<li className="text-white text-sm hover:text-green-600 transition-colors text-center md:text-left"><Link href="/contact">Contacto</Link></li>
 						</ul>
 					</div>
 					<div className="md:w-[20%] w-full items-center md:items-start">

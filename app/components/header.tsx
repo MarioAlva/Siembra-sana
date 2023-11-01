@@ -31,23 +31,23 @@ export default function Header() {
 							<Link href="/contact" className='hover:bg-neutral-100'>
 								<li>Contacto</li>
 							</Link>
-							<Link href="/" className='hover:bg-neutral-100'>
+							<Link href="/press" className='hover:bg-neutral-100'>
 								<li>Prensa</li>
 							</Link>
 						</ul>
 					</div>
-					<div className='flex md:hidden w-16 h-16 bg-green-600 rounded-full items-center justify-center z-[110]' onClick={() => setShowMenu(!showMenu)}>
-						<div className=' flex-wrap flex w-9 h-9 items-center justify-center [&>*]:mx-[1px]'>
-							<div className='border-white rounded-md border-2 w-4 h-4'></div>
-							<div className='border-white rounded-md border-2 w-4 h-4'></div>
-							<div className='border-white rounded-md border-2 w-4 h-4'></div>
-							<div className='border-white rounded-md border-2 w-4 h-4'></div>
+					<div className='flex md:hidden w-12 h-12 bg-green-600 rounded-full items-center justify-center z-[110]' onClick={() => setShowMenu(!showMenu)}>
+						<div className=' flex-wrap flex w-7 h-7 items-center justify-center'>
+							<div className={'border-white rounded border w-3 transition-all ' + (showMenu ? 'h-0 rotate-45 mx-0 -mb-2 -mr-1' : 'h-3 mx-[1px]')}></div>
+							<div className={'border-white rounded border w-3 transition-all ' + (showMenu ? 'h-0 -rotate-45 mx-0 -mb-2' : 'h-3 mx-[1px]')}></div>
+							<div className={'border-white rounded border w-3 transition-all ' + (showMenu ? 'h-0 -rotate-45 mx-0 -mt-1' : 'h-3 mx-[1px]')}></div>
+							<div className={'border-white rounded border w-3 transition-all ' + (showMenu ? 'h-0 rotate-45 mx-0 -mt-1 -ml-1' : 'h-3 mx-[1px]')}></div>
 						</div>
 					</div>
 				</div>
-				<div className={'fixed w-full h-full top-0 left-0 ' + (showMenu ? 'flex md:hidden' : 'hidden')} onClick={() => setShowMenu(false)}>
+				<div className={'fixed w-screen h-screen top-0 left-0 ' + (showMenu ? 'flex md:hidden' : 'hidden')} onClick={() => setShowMenu(false)}>
 				</div>
-				<div className={'fixed z-[100] md:-z-[1] h-48 w-full left-0 bg-white border-b border-neutral-500 shadow-lg transition-all duration-300 ' + (showMenu ? 'top-0' : '-top-full')}>
+				<div className={'fixed z-[100] md:-z-[1] h-48 w-screen left-0 bg-white border-b border-neutral-500 shadow-lg transition-all duration-300 ' + (showMenu ? 'top-0' : '-top-full')}>
 					<ul className='flex flex-col [&>*]:flex [&>*]:px-5 [&>*]:h-full h-full [&>*]:items-center [&>*]:justify-center'>
 						<Link href="/" className='hover:bg-neutral-100 border-b border-neutral-500' onClick={() => setShowMenu(false)}>
 							<li>Inicio</li>
@@ -61,7 +61,7 @@ export default function Header() {
 						<Link href="/contact" className='hover:bg-neutral-100 border-b border-neutral-500' onClick={() => setShowMenu(false)}>
 							<li>Contacto</li>
 						</Link>
-						<Link href="/" className='hover:bg-neutral-100 border-b border-neutral-500' onClick={() => setShowMenu(false)}>
+						<Link href="/press" className='hover:bg-neutral-100 border-b border-neutral-500' onClick={() => setShowMenu(false)}>
 							<li>Prensa</li>
 						</Link>
 					</ul>

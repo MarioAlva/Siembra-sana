@@ -1,10 +1,5 @@
 import landingImage from '@img/banner_round_bg.png'
 import homeImg from '@img/home-img.png'
-import homeMaca from '@img/homeMaca.png'
-import baby from '@img/baby.png'
-import brain from '@img/brain.png'
-import science from '@img/science.png'
-import health from '@img/health.png'
 import Image from 'next/image'
 import Link from 'next/link'
 

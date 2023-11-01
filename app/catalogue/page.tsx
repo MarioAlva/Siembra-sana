@@ -1,6 +1,4 @@
 'use client'
-
-import category from '@info/categories';
 import Image from 'next/image';
 import Link from 'next/link';
 import filter from '@img/filter.svg';
@@ -51,14 +49,14 @@ export default function Catalogue() {
 									/>
 								</div>
 								<div className='flex'>
-									<select className='mr-2 md:mr-12' name="filter" id="filter_select">
+									{/* <select className='mr-2 md:mr-12' name="filter" id="filter_select">
 										<option value="default">Orden por defecto</option>
 										<option value="popular">Orden por popularidad</option>
 										<option value="rate">Orden por puntuación media</option>
 										<option value="latest">Orden por los últimos</option>
 										<option value="price_asc">Orden por precio: bajo a alto</option>
 										<option value="price_desc">Orden por precio: alto a bajo</option>
-									</select>
+									</select> */}
 								</div>
 							</div>
 							<p className='md:hidden block mt-2 text-neutral-500 ml-2'>{filteredProducts.length === 0 ? "No hay ningún resultado" : filteredProducts.length === 1 ? "Mostrando 1 resultado" : "Mostrando todos los " + filteredProducts.length +  " resultados"}</p>
