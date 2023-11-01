@@ -15,37 +15,37 @@ export default function Carrousel() {
 		const [arrowActive, setArrowActive] = useState(false);
 		const [reload, setReload] = useState(false);
 		const dragCarrousel = (event : any) => {
-			//make carrousel dragable
-			let carrousel = document.getElementsByClassName('carrousel-card-container')[0];
-			let carrouselSize = document.getElementsByClassName('carrouselCard-container').length;
-			let firstCard = document.getElementsByClassName('carrouselCard-container')[0];
-			let lastCard = document.getElementsByClassName('carrouselCard-container')[carrouselSize - 1];
-			let x = event.clientX;
-			let y = event.clientY;
-			console.log(x, y);
-			carrousel.classList.add('carrousel-drag');
-			carrousel.addEventListener('mousemove', (event : any) => {
-				let x2 = event.clientX;
-				let y2 = event.clientY;
-				let xDiff = x2 - x;
-				let yDiff = y2 - y;
-				if(Math.abs(xDiff) > Math.abs(yDiff)){
-					// carrousel.setAttribute('style', 'left: ' + xDiff + 'px !important;')
-					carrousel.style.left = xDiff + 'px';
-				}
-			})
-			carrousel.addEventListener('mouseup', () => {
-				if(parseInt(carrousel.style.left) > 100){
-					prevCarrousel();
-				}
-				else if(parseInt(carrousel.style.left) < -100){
-					nextCarrousel();
-				}
-				else{
-					carrousel.style.left = 0 + 'px';
-				}
-				carrousel.classList.remove('carrousel-drag');
-			})
+			// //make carrousel dragable
+			// let carrousel = document.getElementsByClassName('carrousel-card-container')[0];
+			// let carrouselSize = document.getElementsByClassName('carrouselCard-container').length;
+			// let firstCard = document.getElementsByClassName('carrouselCard-container')[0];
+			// let lastCard = document.getElementsByClassName('carrouselCard-container')[carrouselSize - 1];
+			// let x = event.clientX;
+			// let y = event.clientY;
+			// console.log(x, y);
+			// carrousel.classList.add('carrousel-drag');
+			// carrousel.addEventListener('mousemove', (event : any) => {
+			// 	let x2 = event.clientX;
+			// 	let y2 = event.clientY;
+			// 	let xDiff = x2 - x;
+			// 	let yDiff = y2 - y;
+			// 	if(Math.abs(xDiff) > Math.abs(yDiff)){
+			// 		// carrousel.setAttribute('style', 'left: ' + xDiff + 'px !important;')
+			// 		carrousel.style.left = xDiff + 'px';
+			// 	}
+			// })
+			// carrousel.addEventListener('mouseup', () => {
+			// 	if(parseInt(carrousel.style.left) > 100){
+			// 		prevCarrousel();
+			// 	}
+			// 	else if(parseInt(carrousel.style.left) < -100){
+			// 		nextCarrousel();
+			// 	}
+			// 	else{
+			// 		carrousel.style.left = 0 + 'px';
+			// 	}
+			// 	carrousel.classList.remove('carrousel-drag');
+			// })
 		}
 		const nextCarrousel = () => {
 			if(arrowActive) return;
