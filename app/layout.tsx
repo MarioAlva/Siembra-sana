@@ -18,6 +18,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+	<head>
+		<link
+      	  	rel="preload"
+      	  	href="/fonts/bebasNeue-regular.woff2"
+      	  	as="font"
+      	  	crossOrigin=""
+      	  	type="font/woff2"
+      	/>
+	</head>
       <body className={inter.className}>
 		<Header />
 		{children}
