@@ -2,8 +2,10 @@ import './globals.css'
 import Header from './components/header'
 import Footer from './components/footer'
 import type { Metadata } from 'next'
+import localFont from 'next/font/local'
 import { Inter } from 'next/font/google'
 
+const bebasNeue = localFont({ src: './fonts/bebasNeue-regular.woff2' })
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -19,13 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
 	<head>
-		<link
+		{/* <link
       	  	rel="preload"
       	  	href="/fonts/bebasNeue-regular.woff2"
       	  	as="font"
       	  	crossOrigin=""
       	  	type="font/woff2"
-      	/>
+      	/> */}
 	</head>
       <body className={inter.className}>
 		<Header />
