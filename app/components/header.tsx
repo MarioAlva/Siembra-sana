@@ -14,6 +14,7 @@ export default function Header() {
 						src={logo}
 						width={200}
 						alt={'logo'}
+						priority={true}
 					/>
 				</Link>
 				<div className='h-full flex items-center'>
@@ -58,22 +59,32 @@ export default function Header() {
 				<div className={'fixed w-screen h-screen top-0 left-0 ' + (showMenu ? 'flex md:hidden' : 'hidden')} onClick={() => setShowMenu(false)}>
 				</div>
 				<div className={'fixed z-[100] md:-z-[1] h-48 w-screen left-0 bg-white border-b border-neutral-500 shadow-lg transition-all duration-300 ' + (showMenu ? 'top-0' : '-top-full')}>
-					<ul className='flex flex-col [&>*]:flex [&>*]:px-5 [&>*]:h-full h-full [&>*]:items-center [&>*]:justify-center'>
-						<Link href="/" className='hover:bg-neutral-100 border-b border-neutral-500' onClick={() => setShowMenu(false)}>
-							<li>Inicio</li>
-						</Link>
-						<Link href="/catalogue" className='hover:bg-neutral-100 border-b border-neutral-500' onClick={() => setShowMenu(false)}>
-							<li>Catálogo</li>
-						</Link>
-						<Link href="/about" className='hover:bg-neutral-100 border-b border-neutral-500' onClick={() => setShowMenu(false)}>
-							<li>Nosotros</li>
-						</Link>
-						<Link href="/contact" className='hover:bg-neutral-100 border-b border-neutral-500' onClick={() => setShowMenu(false)}>
-							<li>Contacto</li>
-						</Link>
-						<Link href="/press" className='hover:bg-neutral-100 border-b border-neutral-500' onClick={() => setShowMenu(false)}>
-							<li>Prensa</li>
-						</Link>
+					<ul className='flex flex-col [&>li>*]:flex [&>li>*]:px-5 [&>*]:h-full h-full [&>li>*]:items-center [&>li>*]:justify-center'>
+						<li className='hover:bg-neutral-100 border-b border-neutral-500'>
+							<Link href="/" className='w-full h-full'>
+								Inicio
+							</Link>
+						</li>
+						<li className='hover:bg-neutral-100 border-b border-neutral-500'>
+							<Link href="/catalogue" className='w-full h-full'>
+								Catálogo
+							</Link>
+						</li>
+						<li className='hover:bg-neutral-100 border-b border-neutral-500'>
+							<Link href="/about" className='w-full h-full'>
+								Nosotros
+							</Link>
+						</li>
+						<li className='hover:bg-neutral-100 border-b border-neutral-500'>
+							<Link href="/contact" className='w-full h-full'>
+								Contacto
+							</Link>
+						</li>
+						<li className='hover:bg-neutral-100 border-b border-neutral-500'>
+							<Link href="/press" className='w-full h-full'>
+								Prensa
+							</Link>
+						</li>
 					</ul>
 				</div>
 			</div>

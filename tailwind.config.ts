@@ -14,7 +14,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 		'black-white-gradient': 'linear-gradient(180deg, rgba(0,0,0,.6) 60%, rgba(255,255,255,1) 90%)',
 		'transparent-white-gradient': 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 30%)',
-		'plant-image': 'url(./img/footerImage.jpg)',
+		'plant-image': 'url(./img/footerImage.webp)',
 		'logo' : 'url(./img/logo.png)',
 		'healthyMe' : 'url(./img/healthyMe.png)',
 		'greenBg' : 'url(./img/greenBg.jpg)',
