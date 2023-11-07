@@ -38,7 +38,7 @@ import noniPulpBack from '@img/products/noniPulp/Back.png'
 const products = [
 	{
 		name: "CAPSULAS DE MACA ROYALE PARA MUJER",
-		price: "17,00",
+		price: "15,79",
 		weight: 85,
 		packing: "90 FRASCOS POR CAJA",
 		productCode: "MC191",
@@ -48,7 +48,7 @@ const products = [
 	},
 	{
 		name: "CAPSULAS DE MACA ROYALE PARA HOMBRE",
-		price: "17,00",
+		price: "15,79",
 		weight: 85,
 		packing: "90 FRASCOS POR CAJA",
 		productCode: "MC190",
@@ -58,7 +58,7 @@ const products = [
 	},
 	{
 		name: "MACA ROYALE PARA HOMBRE SACHETS",
-		price: "16,00",
+		price: "15,14",
 		weight: 250,
 		packing: "42 SACHETS  POR CAJA",
 		productCode: "MC185",
@@ -68,7 +68,7 @@ const products = [
 	},
 	{
 		name: "MACA ROYALE PARA MUJER SACHETS",
-		price: "16,00",
+		price: "15,14",
 		weight: 250,
 		packing: "42 SACHETS  POR CAJA",
 		productCode: "MC184",
@@ -78,7 +78,7 @@ const products = [
 	},
 	{
 		name: "BARRA DE CHOCOLATE NEGRO 80%",
-		price: "6,50",
+		price: "9,99",
 		weight: 100,
 		packing: "150 TABLETAS POR CAJA",
 		productCode: "MC074",
@@ -88,7 +88,7 @@ const products = [
 	},
 	{
 		name: "BARRA DE CHOCOLATE NEGRO 70%",
-		price: "6,50",
+		price: "9,99",
 		weight: 100,
 		packing: "150 TABLETAS POR CAJA",
 		productCode: "MC070",
@@ -98,7 +98,7 @@ const products = [
 	},
 	{
 		name: "MINI BARRA DE CHOCOLATE NEGRO 70% x 60 unidades",
-		price: "44,00",
+		price: "48,29",
 		weight: 9,
 		packing: "1200 MINI TABLETAS POR CAJA",
 		productCode: "MC076",
@@ -108,7 +108,7 @@ const products = [
 	},
 	{
 		name: "CACAO SACHET EN POLVO",
-		price: "10,40",
+		price: "12,55",
 		weight: 250,
 		packing : "36 SACHETS POR CAJA",
 		productCode: "MC031",
@@ -118,7 +118,7 @@ const products = [
 	},
 	{
 		name: "NIBS DE CACAO SACHET",
-		price: "10,00",
+		price: "12,20",
 		weight: 250,
 		packing : "36 SACHETS POR CAJA",
 		productCode: "MC025",
@@ -128,7 +128,7 @@ const products = [
 	},
 	{
 		name: "AGUAYMANTO DESHIDRATADO CUBIERTO CON CHOCOLATE",
-		price: "4,50",
+		price: "5,20",
 		weight: 65,
 		packing: "125 SACHETS POR CAJA",
 		productCode: "MC501",
@@ -138,7 +138,7 @@ const products = [
 	},
 	{
 		name: "POLVO DE CAMU CAMU ATOMIZADO",
-		price: "15,80",
+		price: "20,04",
 		weight: 100,
 		packing: "56 FRASCOS POR CAJA",
 		productCode: "MC045",
@@ -148,7 +148,7 @@ const products = [
 	},
 	{
 		name: "CAPSULAS VEGETARIANAS DE CAMU CAMU",
-		price: "16,00",
+		price: "19,45",
 		weight: 85,
 		packing: "90 FRASCOS POR CAJA",
 		productCode: "MC060",
@@ -158,7 +158,7 @@ const products = [
 	},
 	{
 		name: "VINAGRE DE CAMU CAMU",
-		price: "9,80",
+		price: "12,34",
 		weight: 720,
 		packing: "25 BOTELLAS POR CAJA",
 		productCode: "MC040",
@@ -168,7 +168,7 @@ const products = [
 	},
 	{
 		name: "JARABE DE YACON",
-		price: "14,00",
+		price: "18,40",
 		weight: 410,
 		packing: "48 FRASCOS POR CAJA",
 		productCode: "MC341",
@@ -178,7 +178,7 @@ const products = [
 	},
 	{
 		name: "PULPA DE NONI",
-		price: "18,00",
+		price: "21,00",
 		weight: 953,
 		packing: "16 BOTELLAS POR CAJA",
 		productCode: "MC401",

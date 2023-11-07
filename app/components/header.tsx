@@ -18,22 +18,32 @@ export default function Header() {
 				</Link>
 				<div className='h-full flex items-center'>
 					<div className='md:flex hidden justify-end items-center h-full'>
-						<ul className='flex [&>*]:flex [&>*]:px-5 [&>*]:h-full h-full [&>*]:items-center'>
-							<Link href="/" className='hover:bg-neutral-100'>
-								<li>Inicio</li>
-							</Link>
-							<Link href="/catalogue" className='hover:bg-neutral-100'>
-								<li>Catálogo</li>
-							</Link>
-							<Link href="/about" className='hover:bg-neutral-100'>
-								<li>Nosotros</li>
-							</Link>
-							<Link href="/contact" className='hover:bg-neutral-100'>
-								<li>Contacto</li>
-							</Link>
-							<Link href="/press" className='hover:bg-neutral-100'>
-								<li>Prensa</li>
-							</Link>
+						<ul className='flex [&>li>*]:flex [&>*]:px-5 [&>*]:h-full h-full [&>li>*]:items-center'>
+							<li className='hover:bg-neutral-100'>
+								<Link href="/" className='w-full h-full'>
+									Inicio
+								</Link>
+							</li>
+							<li className='hover:bg-neutral-100'>
+								<Link href="/catalogue" className='w-full h-full'>
+									Catálogo
+								</Link>
+							</li>
+							<li className='hover:bg-neutral-100'>
+								<Link href="/about" className='w-full h-full'>
+									Nosotros
+								</Link>
+							</li>
+							<li className='hover:bg-neutral-100'>
+								<Link href="/contact" className='w-full h-full'>
+									Contacto
+								</Link>
+							</li>
+							<li className='hover:bg-neutral-100'>
+								<Link href="/press" className='w-full h-full'>
+									Prensa
+								</Link>
+							</li>
 						</ul>
 					</div>
 					<div className='flex md:hidden w-12 h-12 bg-green-600 rounded-full items-center justify-center z-[110]' onClick={() => setShowMenu(!showMenu)}>

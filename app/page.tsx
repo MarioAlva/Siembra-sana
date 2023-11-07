@@ -1,5 +1,5 @@
-import landingImage from '@img/banner_round_bg.png'
-import homeImg from '@img/home-img.png'
+import landingImage from '@img/banner_round_bg.webp'
+import homeImg from '@img/home-img.webp'
 import Image from 'next/image'
 import Link from 'next/link'
 
