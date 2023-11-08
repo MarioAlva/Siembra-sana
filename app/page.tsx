@@ -2,6 +2,7 @@ import landingImage from '@img/banner_round_bg.webp'
 import homeImg from '@img/home-img.webp'
 import Image from 'next/image'
 import Link from 'next/link'
+import bebasNeue from '@fonts/bebasNeue'
 
 export default function Page() {
   return (
@@ -9,7 +10,7 @@ export default function Page() {
     	<div className="w-[1700px] max-w-full relative flex flex-col items-center">
 			<section className="w-full flex flex-col items-center">
 				<h3 className="uppercase text-xs md:text-xl font-bold text-amber-500 tracking-widest">.. hazlo por ti ..</h3>
-				<h1 className="uppercase text-center text-neutral-800 mt-2 mb-10 text-4xl leading-10 w-[350px] md:text-[80px] md:w-[710px] md:leading-[5.5rem] font-bebasNeue">EL BIENESTAR COMIENZA CON UNA BUENA ALIMENTACIÓN</h1>
+				<h1 className={"uppercase text-center text-neutral-800 mt-2 mb-10 text-4xl leading-10 w-[350px] md:text-[80px] md:w-[710px] md:leading-[5.5rem] " + bebasNeue.className}>EL BIENESTAR COMIENZA CON UNA BUENA ALIMENTACIÓN</h1>
 				<div className='max-w-full flex justify-center relative'>
 					<div className='absolute top-0'>
 						<Link href="/catalogue">

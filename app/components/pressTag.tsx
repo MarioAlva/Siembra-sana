@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import Image, { StaticImageData } from 'next/image'
 import plant from '@img/plant.webp'
+import bebasNeue from '../fonts/bebasNeue';
 
 export default function PressTags(props : {title: string, description: string, index: number, img: StaticImageData, imgFooter: string, alt: string}) {
 	const [compareHeight, setCompareHeight] = useState(false);
@@ -15,7 +16,7 @@ export default function PressTags(props : {title: string, description: string, i
 	return (
 		<section className={"flex flex-col w-[1200px] max-w-full md:h-[500px] mb-12 md:mt-12 " + (props.index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse')}>
 			<div className={'md:w-1/2 w-full md:h-full md:max-h-full flex flex-col p-3 md:p-12 ' + (showMore ? 'max-h-[250px]' : 'h-auto')}>
-				<h1 className='md:text-6xl text-2xl font-bold font-bebasNeue tracking-wider uppercase'>{props.title}</h1>
+				<h1 className={'md:text-6xl text-2xl font-bold tracking-wider uppercase ' + bebasNeue.className}>{props.title}</h1>
 				<Image 
 					className='object-contain md:w-28 md:h-3 w-16 h-2 relative my-2'
 					src={plant}

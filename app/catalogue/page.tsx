@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import filter from '@img/filter.svg';
 import products from '@info/products';
-import { useState } from 'react';
 
 export default function Catalogue() {
 	const filteredProducts = products;
