@@ -85,8 +85,8 @@ export default function Carrousel() {
 		}
 		return(
 			<div>
-				<div className='carrousel-container'>
-					<div className='carrousel-arrow hidden md:flex' style={{transform: "rotate(90deg)"}}>
+				<div className='carrousel-container relative'>
+					<div className='carrousel-arrow absolute md:relative flex z-10 -left-6 md:left-0' style={{transform: "rotate(90deg)"}}>
 						<div onClick={() => prevCarrousel()} className='carrousel-arrow-container'>
 							<Image
 								src={Arrow}
@@ -116,7 +116,7 @@ export default function Carrousel() {
 							/>
 						</div>
 					</div>
-					<div className='carrousel-arrow hidden md:flex' style={{transform: "rotate(-90deg)"}}>
+					<div className='carrousel-arrow absolute md:relative flex z-10 -right-6 md:right-0' style={{transform: "rotate(-90deg)"}}>
 						<div onClick={() => nextCarrousel()} className='carrousel-arrow-container'>
 							<Image
 								src={Arrow}
