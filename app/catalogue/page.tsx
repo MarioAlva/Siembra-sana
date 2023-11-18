@@ -55,9 +55,9 @@ export default function Catalogue() {
 					{showGranel ?
 					<div className='flex flex-col items-center pt-6 px-2'>
 						<h4 className='font-bold md:text-4xl md:mb-4 text-xl mb-2'>Lista de productos Bio Granel</h4>
-						<Image src={listaGranel1} alt='listaGranel1'/>
-						<Image src={listaGranel2} alt='listaGranel2'/>
-						<Image src={listaGranel2e} alt='listaGranel2-5'/>
+						<Image src={listaGranel1} alt='listaGranel1' priority={true}/>
+						<Image src={listaGranel2} alt='listaGranel2' priority={true}/>
+						<Image src={listaGranel2e} alt='listaGranel2-5' priority={true}/>
 						<Image src={listaGranel3} alt='listaGranel3'/>
 						<Image src={listaGranel4} alt='listaGranel4'/>
 						<Image src={listaGranel5} alt='listaGranel5'/>
