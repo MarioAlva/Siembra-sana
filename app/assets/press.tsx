@@ -9,19 +9,6 @@ import miHerbolarioPage17 from '@img/press/MiHerbolarioPage17.webp'
 
 const press = [
 	{
-		title: "GiroSalut Juny 2023",
-		pages: [
-			{
-				img: giroSalutFront1,
-				description: "Portada GiroSalut"
-			},
-			{
-				img: backPage,
-				description: "Pagina 9 GiroSalut"
-			}
-		]
-	},
-	{
 		title: "GiroSalut Abril 2023",
 		pages: [
 			{
@@ -35,6 +22,19 @@ const press = [
 			{
 				img: pageRight,
 				description: "Pagina 15 GiroSalut"
+			}
+		]
+	},
+	{
+		title: "GiroSalut Juny 2023",
+		pages: [
+			{
+				img: giroSalutFront1,
+				description: "Portada GiroSalut"
+			},
+			{
+				img: backPage,
+				description: "Pagina 9 GiroSalut"
 			}
 		]
 	},
