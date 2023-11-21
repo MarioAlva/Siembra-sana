@@ -69,7 +69,7 @@ export default function Catalogue() {
 									</div>
 								</div>}
 						</div>
-						<div className='flex w-full relative min-h-[824px]'>
+						<div className='flex w-full relative md:min-h-[824px]'>
 							<div className='md:flex hidden w-[30%] max-w-full h-6 bg-green-600 rounded-sm' onClick={() => setShowFilter(!showFilter)}>
 								<div className='w-full bg-green-200 border-r-green-600 border'>
 									{productsGranel.map((product : any, index : number) => (
