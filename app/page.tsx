@@ -1,6 +1,5 @@
 'use client'
 import landingImage from '@img/banner_round_bg.webp'
-import axios from 'axios'
 import homeImg from '@img/home-img.webp'
 import Image from 'next/image'
 import Link from 'next/link'

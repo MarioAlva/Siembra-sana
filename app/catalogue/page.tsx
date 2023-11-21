@@ -3,35 +3,32 @@ import Image from 'next/image';
 import Link from 'next/link';
 import filter from '@img/filter.svg';
 import products from '@info/products';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import healthyMe from '@img/healthyMe.png';
 import granel from '@img/granel.png';
-import listaGranel1 from '@img//listaGranel/listaGranel1.png';
-import listaGranel2e from '@img//listaGranel/listaGranel2-5.png';
-import listaGranel2 from '@img//listaGranel/listaGranel2.png';
-import listaGranel3 from '@img//listaGranel/listaGranel3.png';
-import listaGranel4 from '@img//listaGranel/listaGranel4.png';
-import listaGranel5 from '@img//listaGranel/listaGranel5.png';
-import listaGranel6 from '@img//listaGranel/listaGranel6.png';
-import listaGranel7 from '@img//listaGranel/listaGranel7.png';
-import listaGranel8 from '@img//listaGranel/listaGranel8.png';
-import listaGranel9 from '@img//listaGranel/listaGranel9.png';
-import listaGranel10 from '@img//listaGranel/listaGranel10.png';
-import listaGranel11 from '@img//listaGranel/listaGranel11.png';
-import listaGranel12 from '@img//listaGranel/listaGranel12.png';
-import listaGranel13 from '@img//listaGranel/listaGranel13.png';
-import listaGranel14 from '@img//listaGranel/listaGranel14.png';
-import listaGranel15 from '@img//listaGranel/listaGranel15.png';
-import listaGranel16 from '@img//listaGranel/listaGranel16.png';
-import listaGranel17 from '@img//listaGranel/listaGranel17.png';
-import listaGranel18 from '@img//listaGranel/listaGranel18.png';
-import listaGranel19 from '@img//listaGranel/listaGranel19.png';
-import listaGranel20 from '@img//listaGranel/listaGranel20.png';
-import listaGranel21 from '@img//listaGranel/listaGranel21.png';
+import productsGranel from '../assets/productsGranel';
+import descriptionGranel from '@img/listaGranel/descriptionGranel.png';
 
 export default function Catalogue() {
 	const [showGranel, setShowGranel] = useState(false);
+	const [showFilter, setShowFilter] = useState(false);
+	const [filteredGranel, setFilteredGranel] = useState(productsGranel);
+	const [filter, setFilter] = useState('');
 	const filteredProducts = products;
+	useEffect(() => {
+		if(filter === '')
+			setFilteredGranel(productsGranel);
+		else
+			setFilteredGranel(productsGranel.filter((product : any) => filter.includes(product.name)));
+	}, [filter]);
+
+	const changeFilter = (name : string) => {
+		if(filter.includes(name)) {
+			setFilter(filter.replace("," + name, ''));
+		}else{
+			setFilter(filter + "," + name);
+		}
+	}
 	return (
 		<div>
 			<main id='main_content' className="flex justify-center w-[1700px] max-w-full relative left-[50%] translate-x-[-50%] pb-12">
@@ -53,30 +50,48 @@ export default function Catalogue() {
 						</div>
 					</div>
 					{showGranel ?
-					<div className='flex flex-col items-center pt-6 px-2'>
+					<div className='pt-6 px-2 flex flex-col items-center h-full'>
 						<h4 className='font-bold md:text-4xl md:mb-4 text-xl mb-2'>Lista de productos Bio Granel</h4>
-						<Image src={listaGranel1} alt='listaGranel1' priority={true}/>
-						<Image src={listaGranel2} alt='listaGranel2' priority={true}/>
-						<Image src={listaGranel2e} alt='listaGranel2-5' priority={true}/>
-						<Image src={listaGranel3} alt='listaGranel3'/>
-						<Image src={listaGranel4} alt='listaGranel4'/>
-						<Image src={listaGranel5} alt='listaGranel5'/>
-						<Image src={listaGranel6} alt='listaGranel6'/>
-						<Image src={listaGranel7} alt='listaGranel7'/>
-						<Image src={listaGranel8} alt='listaGranel8'/>
-						<Image src={listaGranel9} alt='listaGranel9'/>
-						<Image src={listaGranel10} alt='listaGranel10'/>
-						<Image src={listaGranel11} alt='listaGranel11'/>
-						<Image src={listaGranel12} alt='listaGranel12'/>
-						<Image src={listaGranel13} alt='listaGranel13'/>
-						<Image src={listaGranel14} alt='listaGranel14'/>
-						<Image src={listaGranel15} alt='listaGranel15'/>
-						<Image src={listaGranel16} alt='listaGranel16'/>
-						<Image src={listaGranel17} alt='listaGranel17'/>
-						<Image src={listaGranel18} alt='listaGranel18'/>
-						<Image src={listaGranel19} alt='listaGranel19'/>
-						<Image src={listaGranel20} alt='listaGranel20'/>
-						<Image src={listaGranel21} alt='listaGranel21'/>
+						<div className='flex md:hidden justify-start w-full px-3 relative'>
+							<span className='flex px-4 bg-green-200 rounded cursor-pointer mb-2 font-bold' onClick={() => setShowFilter(!showFilter)}>Filter</span>
+							<span className=' justify-between text-xs flex px-3 ml-2 bg-neutral-300 rounded-full items-center h-6 max-w-full overflow-hidden text-ellipsis flex-nowrap'>
+								{filter || 'Todos'}
+								{filter && <div onClick={() => setFilter('')} className='ml-2 text-white w-4 h-4 justify-center items-center flex cursor-pointer bg-neutral-600 rounded-full'>x</div>}
+							</span>
+							{showFilter &&
+								<div className='absolute top-6 z-10 w-[96%] bg-white'>
+									<div className='w-full bg-green-200 border-r-green-600 border'>
+									{productsGranel.map((product : any, index : number) => (
+										<div onClick={() => changeFilter(product.name)} key={index} className={' cursor-pointer w-full flex justify-center items-center border-b border-green-600 ' + (filter.includes(product.name) && 'bg-green-400')}>
+											<h4 className='font-bold text-sm h-6'>{product.name}</h4>
+										</div>
+									))}
+									</div>
+								</div>}
+						</div>
+						<div className='flex w-full relative min-h-[824px]'>
+							<div className='md:flex hidden w-[30%] max-w-full h-6 bg-green-600 rounded-sm' onClick={() => setShowFilter(!showFilter)}>
+								<div className='w-full bg-green-200 border-r-green-600 border'>
+									{productsGranel.map((product : any, index : number) => (
+										<div onClick={() => changeFilter(product.name)} key={index} className={' cursor-pointer w-full flex justify-center items-center border-b border-green-600 hover:bg-green-400 ' + (filter.includes(product.name) && 'bg-green-400')}>
+											<h4 className='font-bold text-sm h-6'>{product.name}</h4>
+										</div>
+									))}
+								</div>
+							</div>
+							<div className='md:w-[70%] w-full px-2 flex flex-col items-center'>
+							<Image
+								src={descriptionGranel}
+								alt='Description'
+							/>
+										
+							{filteredGranel.map((product : any, index : number) => (
+								product.img.map((img : any, index2 : number) => (
+									<Image key={index2} src={img} alt={product.name + index2}/>
+								))
+							))}
+							</div>
+						</div>
 					</div>
 					:
 					<section className='w-full flex justify-center'>
