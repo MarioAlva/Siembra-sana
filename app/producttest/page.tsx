@@ -76,7 +76,7 @@ export default function Product() {
 							/>
 						</div>
 						<div className='flex w-full h-auto first:[&>div]:mx-0'>
-							{product.name && product.img.map((img : StaticImageData, index : number) => (
+							{product.name && product.img.map((img : any, index : number) => (
 								<div key={index} className='mx-[2px] sm:mx-2 md:mx-4 p-2 md:h-24 sm:h-16 h-12 md:w-24 sm:w-16 w-12 cursor-pointer border border-green-600 mb-4 bg-neutral-200' onClick={() => {setSelectedImage(img); setLoaded(true)}}>
 									<Image 
 										className='h-full w-full object-contain'
