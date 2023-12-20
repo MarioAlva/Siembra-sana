@@ -37,7 +37,8 @@ export default function AlvaTest() {
 	const [name, setName] = useState('')
 
 	const getProducts = () => {
-		fetch('https://siembrasanaapi-dev-ghhz.2.ie-1.fl0.io/products')
+		// fetch('https://siembrasanaapi-dev-ghhz.2.ie-1.fl0.io/products')
+		fetch('http://localhost:3000/products')
 			.then(res => res.json())
 			.then(res => {
 				setProducts(res);
@@ -89,7 +90,8 @@ export default function AlvaTest() {
 		formData.append('img', product.img.join(',') as string)
 		formData.append('oldName', name)
 		if (addProduct) {
-			axios.post('https://siembrasanaapi-dev-ghhz.2.ie-1.fl0.io/products', formData, {
+			// axios.post('https://siembrasanaapi-dev-ghhz.2.ie-1.fl0.io/products', formData, {
+			axios.post('http://localhost:3000/products', formData, {
 				headers: {
 					'Content-Type': 'multipart/form-data'
 				}
@@ -114,7 +116,8 @@ export default function AlvaTest() {
 		}
 	}
 	const deleteProduct = () => {
-		axios.delete('https://siembrasanaapi-dev-ghhz.2.ie-1.fl0.io/products/' + product.id).then(res => {
+		// axios.delete('https://siembrasanaapi-dev-ghhz.2.ie-1.fl0.io/products/' + product.id).then(res => {
+		axios.delete('http://localhost:3000/products/' + product.id).then(res => {
 			setShowPopUp(false)
 			setProducts(products.filter((product2 : any, index : number) => index !== productIndex))
 			resetProduct()

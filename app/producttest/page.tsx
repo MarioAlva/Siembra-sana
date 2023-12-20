@@ -42,7 +42,8 @@ export default function Product() {
 		//pick up the product id from the url param
 		const queryString = window.location.search;
 		const urlParams = new URLSearchParams(queryString);
-		axios.get('https://siembrasanaapi-dev-ghhz.2.ie-1.fl0.io/products/' + urlParams.get('id'))
+		// axios.get('https://siembrasanaapi-dev-ghhz.2.ie-1.fl0.io/products/' + urlParams.get('id'))
+		axios.get('http://localhost:3000/products/' + urlParams.get('id'))
 			.then(res => {
 				setProduct(res.data);
 			});

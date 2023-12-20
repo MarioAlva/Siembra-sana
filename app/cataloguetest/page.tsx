@@ -17,7 +17,8 @@ export default function Catalogue() {
 	const filteredProducts = products;
 	
 	const getProducts = () => {
-		fetch('https://siembrasanaapi-dev-ghhz.2.ie-1.fl0.io/products')
+		// fetch('https://siembrasanaapi-dev-ghhz.2.ie-1.fl0.io/products')
+		fetch('http://localhost:3000/products')
 			.then(res => res.json())
 			.then(res => {
 				setProducts(res);
