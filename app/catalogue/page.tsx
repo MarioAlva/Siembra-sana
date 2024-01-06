@@ -60,7 +60,7 @@ export default function Catalogue() {
 								alt='Warning'
 								className='h-6 w-6 object-cover -mt-2 mr-1'
 							/>
-							<h6 className='mb-2 md:text-lg text-sm text-center font-bold'>Actualizado en Noviembre de 2023 (El precio de los productos puede variar)</h6>
+							<h6 className='mb-2 md:text-lg text-sm text-center font-bold'>Actualizado en Enero de 2024 (El precio de los productos puede variar)</h6>
 							<Image
 								src={warning}
 								alt='Warning'
@@ -98,6 +98,7 @@ export default function Catalogue() {
 							<Image
 								src={descriptionGranel}
 								alt='Description'
+								
 							/>
 										
 							{filteredGranel.map((product : any, index : number) => (
