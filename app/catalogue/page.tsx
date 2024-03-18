@@ -60,7 +60,7 @@ export default function Catalogue() {
 								alt='Warning'
 								className='h-6 w-6 object-cover -mt-2 mr-1'
 							/>
-							<h6 className='mb-2 md:text-lg text-sm text-center font-bold'>Actualizado en Enero de 2024 (El precio de los productos puede variar)</h6>
+							<h6 className='mb-2 md:text-lg text-sm text-center font-bold'>Actualizado en Marzo de 2024</h6>
 							<Image
 								src={warning}
 								alt='Warning'
@@ -84,7 +84,7 @@ export default function Catalogue() {
 									</div>
 								</div>}
 						</div>
-						<div className='flex w-full relative md:min-h-[824px]'>
+						<div className='flex w-full px-auto relative md:min-h-[824px]'>
 							<div className='md:flex hidden w-[30%] max-w-full h-6 bg-green-600 rounded-sm' onClick={() => setShowFilter(!showFilter)}>
 								<div className='w-full bg-green-200 border-r-green-600 border'>
 									{productsGranel.map((product : any, index : number) => (
@@ -94,18 +94,20 @@ export default function Catalogue() {
 									))}
 								</div>
 							</div>
-							<div className='md:w-[70%] w-full px-2 flex flex-col items-center'>
-							<Image
-								src={descriptionGranel}
-								alt='Description'
-								
-							/>
+							<div className='md:w-[50%] w-full md:border-l border-green-600 flex justify-center'>
+								<div className='md:w-[70%] w-full px-2 flex flex-col items-center'>
+								<Image
+									src={descriptionGranel}
+									alt='Description'
 										
-							{filteredGranel.map((product : any, index : number) => (
-								product.img.map((img : any, index2 : number) => (
-									<Image key={index2} src={img} alt={product.name + index2}/>
-								))
-							))}
+								/>
+
+								{filteredGranel.map((product : any, index : number) => (
+									product.img.map((img : any, index2 : number) => (
+										<Image key={index2} src={img} alt={product.name + index2}/>
+									))
+								))}
+								</div>
 							</div>
 						</div>
 					</div>
