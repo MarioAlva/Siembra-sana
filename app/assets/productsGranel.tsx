@@ -47,114 +47,111 @@ import listaGranel46 from '@img//listaGranel/listaGranel46.png';
 import listaGranel47 from '@img//listaGranel/listaGranel47.png';
 import listaGranel48 from '@img//listaGranel/listaGranel48.png';
 import listaGranel49 from '@img//listaGranel/listaGranel49.png';
-import listaGranel50 from '@img//listaGranel/listaGranel50.png';
-import listaGranel51 from '@img//listaGranel/listaGranel51.png';
-import listaGranel52 from '@img//listaGranel/listaGranel52.png';
 
 const productsGranel = [
 	{
 		name: 'general',
-		img: [listaGranel1, listaGranel2, listaGranel3],
+		img: [listaGranel1, listaGranel2],
 	},
 	{
 		name: 'aceites',
-		img: [listaGranel4],
+		img: [listaGranel3],
 	},
 	{
 		name: 'aceites esencial',
-		img: [listaGranel5],
+		img: [listaGranel4],
 	},
 	{
 		name: 'aceitunas',
-		img: [listaGranel6],
+		img: [listaGranel5],
 	},
 	{
 		name: 'aditivos',
-		img: [listaGranel7],
+		img: [listaGranel6],
 	},
 	{
 		name: 'algas',
-		img: [listaGranel8],
+		img: [listaGranel7],
 	},
 	{
 		name: 'almidones',
-		img: [listaGranel9],
+		img: [listaGranel8],
 	},
 	{
 		name: 'arroces',
-		img: [listaGranel10, listaGranel11],
+		img: [listaGranel9],
 	},
 	{
 		name: 'azucares',
-		img: [listaGranel12],
+		img: [listaGranel10],
 	},
 	{
 		name: 'cacao y derivados',
-		img: [listaGranel13],
+		img: [listaGranel11],
 	},
 	{
 		name: 'cereales y granos',
-		img: [listaGranel14, listaGranel15],
+		img: [listaGranel12, listaGranel13],
 	},
 	{
 		name: 'cereales inflado',
-		img: [listaGranel16],
+		img: [listaGranel14],
 	},
 	{
 		name: 'copos',
-		img: [listaGranel17],
+		img: [listaGranel15, listaGranel16],
 	},
 	{
 		name: 'edulcorantes',
-		img: [listaGranel18, listaGranel19],
+		img: [listaGranel17],
 	},
 	{
 		name: 'especias',
-		img: [listaGranel20, listaGranel21, listaGranel22, listaGranel23],
+		img: [listaGranel18, listaGranel19, listaGranel20, listaGranel21, listaGranel22],
 	},
 	{
 		name: 'fibras',
-		img: [listaGranel24],
+		img: [listaGranel23],
 	},
 	{
 		name: 'fruta deshidratada',
-		img: [listaGranel25, listaGranel26],
+		img: [listaGranel24, listaGranel25],
 	},
 	{
 		name: 'frutos secos',
-		img: [listaGranel27, listaGranel28],
+		img: [listaGranel26, listaGranel27],
 	},
 	{
 		name: 'grasas vegetales',
-		img: [listaGranel29],
+		img: [listaGranel28],
 	},
 	{
 		name: 'harinas',
-		img: [listaGranel30, listaGranel31, listaGranel32],
+		img: [listaGranel29, listaGranel30, listaGranel31],
 	},
 	{
 		name: 'lacteos y similares',
-		img: [listaGranel33],
+		img: [listaGranel32],
 	},
 	{
 		name: 'legumbres',
-		img: [listaGranel34, listaGranel35],
+		img: [listaGranel33, listaGranel34],
 	},
 	{
 		name: 'levaduras',
-		img: [listaGranel36],
+		img: [listaGranel35],
 	},
 	{
 		name: 'mueslis',
-		img: [listaGranel37],
+		img: [listaGranel36],
 	},
 	{
 		name: 'ovoproductos',
-		img: [listaGranel38],
+		img: [listaGranel37],
 	},
 	{
 		name: 'pastas',
-		img: [listaGranel39],
+		img: [listaGranel38, listaGranel39],
 	},
 	{
 		name: 'productos asiaticos',
@@ -162,35 +159,35 @@ const productsGranel = [
 	},
 	{
 		name: 'proteinas',
-		img: [listaGranel41, listaGranel42],
+		img: [listaGranel41],
 	},
 	{
 		name: 'salsas/untables',
-		img: [listaGranel43],
+		img: [listaGranel42],
 	},
 	{
 		name: 'semillas',
-		img: [listaGranel44],
+		img: [listaGranel43],
 	},
 	{
 		name: 'setas',
-		img: [listaGranel45],
+		img: [listaGranel44],
 	},
 	{
 		name: 'superfoods',
-		img: [listaGranel46, listaGranel47],
+		img: [listaGranel45],
 	},
 	{
 		name: 'tomates y derivados',
-		img: [listaGranel48],
+		img: [listaGranel46],
 	},
 	{
 		name: 'vegetales',
-		img: [listaGranel49, listaGranel50, listaGranel51],
+		img: [listaGranel47, listaGranel48],
 	},
 	{
 		name: 'vinagres y zumos',
-		img: [listaGranel52],
+		img: [listaGranel49],
 	},
 ]
 
