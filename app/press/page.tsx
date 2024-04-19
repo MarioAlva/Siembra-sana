@@ -4,6 +4,7 @@ import Carrousel from '@components/Carrousel'
 import bebasNeue from '@fonts/bebasNeue'
 import press from '@info/press'
 import PressSection from '@components/pressSection'
+import chiaAfiche from '@img/press/chiaAfiche.webp'
 
 export default function Press() {
 	return (
@@ -21,6 +22,14 @@ export default function Press() {
 				<section className='w-[1400px] max-w-full flex flex-col items-center'>
 					<span className={'text-4xl tracking-wider ' + bebasNeue.className}>Trípticos</span>
 					<Carrousel />
+				</section>
+				<section className='mb-10 mt-6 flex flex-col items-center'>
+					<span className={'mb-7 text-center text-4xl tracking-wider ' + bebasNeue.className}>Chía, la semilla de la vida</span>
+					<Image 
+						src={chiaAfiche}
+						alt="afiche"
+						className='w-[95%] h-full object-contain'
+					/>
 				</section>
 				<section className='w-full md:h-[700px] h-auto mt-8 flex flex-col items-center'>
 					<span className={'mb-4 text-4xl tracking-wider ' + bebasNeue.className}>Poster</span>
