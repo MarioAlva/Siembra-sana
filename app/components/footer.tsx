@@ -29,7 +29,7 @@ export default function Footer(){
 									className='w-5'
 								/>
 							</Link>
-							<Link href="https://www.instagram.com/siembrasana.es/" target="_BLANK" className="w-10 h-10 flex justify-center items-center rounded-full bg-neutral-800 hover:bg-green-600 transition-colors">
+							<Link href="https://www.instagram.com/siembrasana.bio/" target="_BLANK" className="w-10 h-10 flex justify-center items-center rounded-full bg-neutral-800 hover:bg-green-600 transition-colors">
 								<Image 
 									src={instagram}
 									alt="instagram"
@@ -83,7 +83,7 @@ export default function Footer(){
 				</div>
 				<div className="px-5 absolute bottom-0 w-full h-16 bg-black flex justify-center items-center z-10 border-t border-neutral-800">
 					<div className="w-[1400px] max-w-full flex justify-around items-center flex-col-reverse md:flex-row">
-						<p className="text-neutral-300 md:text-sm text-xs my-3">© 2023 Siembra Sana. Todos los derechos reservados.</p>
+						<p className="text-neutral-300 md:text-sm text-xs my-3">© 2024 Siembra Sana. Todos los derechos reservados.</p>
 					</div>
 				</div>
 		</footer>
