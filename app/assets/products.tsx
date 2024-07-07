@@ -34,8 +34,20 @@ import yaconSyrupBack from '@img/products/yaconSyrup/Back.png'
 import yaconSyrupLabel from '@img/products/yaconSyrup/Label.png'
 import noniPulpItem from '@img/products/noniPulp/Item.png'
 import noniPulpBack from '@img/products/noniPulp/Back.png'
+import chiaItem from '@img/products/chia/Item.png'
 
 const products = [
+	{
+		name: "SEMILLAS DE CHÍA",
+		price: "3,00",
+		weight: 250,
+		packing: "48 BOLSAS POR CAJA",
+		productCode: "MC001",
+		description: "",
+		img: [chiaItem],
+		genre: ["chia"]
+
+	},
 	{
 		name: "CAPSULAS DE MACA ROYALE PARA MUJER",
 		price: "15,79",

@@ -54,19 +54,6 @@ export default function Catalogue() {
 					{showGranel ?
 					<div className='pt-6 px-2 flex flex-col items-center h-full'>
 						<h4 className='font-bold md:text-4xl md:mb-4 text-xl'>Lista de productos Bio Granel</h4>
-						<div className='flex items-center'>
-							<Image
-								src={warning}
-								alt='Warning'
-								className='h-6 w-6 object-cover -mt-2 mr-1'
-							/>
-							<h6 className='mb-2 md:text-lg text-sm text-center font-bold'>Actualizado en Marzo de 2024</h6>
-							<Image
-								src={warning}
-								alt='Warning'
-								className='h-6 w-6 object-cover -mt-2 ml-1'
-							/>
-						</div>
 						<div className='flex md:hidden justify-start w-full px-3 relative'>
 							<span className='flex px-4 bg-green-200 rounded cursor-pointer mb-2 font-bold' onClick={() => setShowFilter(!showFilter)}>Filter</span>
 							<span className=' justify-between text-xs flex px-3 ml-2 bg-neutral-300 rounded-full items-center h-6 max-w-full overflow-hidden text-ellipsis flex-nowrap'>
