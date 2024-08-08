@@ -40,10 +40,10 @@ const products = [
 	{
 		name: "SEMILLAS DE CHÍA",
 		price: "3,00",
-		weight: 250,
-		packing: "48 BOLSAS POR CAJA",
+		weight: 150,
+		packing: "Pote dosificador con medidor de consumo para asegurar el consumo de 15 gr diarios y así cubrir el 100% de Omega 3 diario que el cuerpo necesita",
 		productCode: "MC001",
-		description: "",
+		description: "Las semillas de chía son conocidas por sus múltiples propiedades beneficiosas para la salud. Aquí te dejo algunas de las más destacadas:\n\nPropiedades Nutricionales\nRicas en Omega-3: Contienen ácidos grasos poliinsaturados, especialmente ácido alfa-linolénico, que son beneficiosos para la salud cardiovascular1.\nAlto contenido en fibra: Aproximadamente el 25% de su peso es fibra, lo que ayuda a regular el tránsito intestinal y a mantener la salud digestiva2.\nProteínas: Aproximadamente el 20% de las semillas de chía son proteínas, lo que las convierte en una buena fuente de este nutriente, especialmente para dietas vegetarianas y veganas2.\nVitaminas y minerales: Son una buena fuente de vitaminas del grupo B, calcio, fósforo y magnesio2.\nBeneficios para la Salud\nAntioxidantes: Contienen antioxidantes que ayudan a combatir el daño celular y a prevenir el envejecimiento prematuro3.\nControl del colesterol: Ayudan a reducir los niveles de colesterol LDL (colesterol malo) y a aumentar los niveles de HDL (colesterol bueno)1.\nRegulación del azúcar en sangre: Tienen un efecto hipoglucemiante, lo que puede ser beneficioso para personas con diabetes1.\nEfecto saciante: Al absorber agua, las semillas de chía aumentan su tamaño y ayudan a controlar el apetito, lo que puede ser útil en dietas para perder peso3.\nUsos y Consumo\nLas semillas de chía se pueden consumir de diversas formas: en batidos, yogures, ensaladas, panes, y más. Es importante hidratarlas antes de consumirlas para aprovechar al máximo sus beneficios",
 		img: [chiaItem],
 		genre: ["chia"]
 

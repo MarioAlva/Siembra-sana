@@ -10,7 +10,7 @@ const faqs = [
 	},
 	{
 		question: "¿Son orgánicos?",
-		answer: "Todos nuestros productos son orgánicos, cultivados en suelos libres de pesticidas y fertilizantes químicos. Además, no contienen ningún ingrediente de origen animal, por lo que son aptos para veganos.",
+		answer: "Todos nuestros productos son orgánicos silvestres, cultivados en suelos libres de pesticidas y fertilizantes químicos. Además, no contienen ningún ingrediente de origen animal, por lo que son aptos para veganos.",
 	},
 	{
 		question: "¿Cuánto tiempo se conservan?",
